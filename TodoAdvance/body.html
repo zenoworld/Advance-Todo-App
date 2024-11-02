@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance To - do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #212121;color: aliceblue;">
+    <div id="main">
+        <h1 id="head">To-Do List</h1>
+        <div id="container">
+            <div id="form-div">
+                <input type="text" placeholder="Input Your Text" id="input"></input>
+                <input type="date" id="date"></input>
+                <input type="time" id="due-date">
+                <button id="submit">Add Task</button>
+            </div>
+            <input type="search" placeholder="search Your task" id="search-btn">
+        </div>
+        <div id="item-div">
+            <div id="item-div-head">
+                <button id="sortByDate">Sort By Date</button>
+                <h2 id="todoItems">To-Do Items</h2>
+                <button id="sortByStatus">Sort By Status</button>
+            </div>
+            <ul id="ul"></ul>
+        </div>
+    </div>
+    <div id="edit-container" style="display: none;">
+        <h2 id="todoItems">Update</h2>
+        <input type="text" placeholder="Input Your Text" id="edit-input"></input>
+        <input type="date" id="edit-date"></input>
+        <input type="time" id="edit-due-date">
+        <button id="edit-submit">Save</button>
+        <button id="edit-cancel">Cancel</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
